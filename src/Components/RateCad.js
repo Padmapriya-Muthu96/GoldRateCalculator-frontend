@@ -46,7 +46,7 @@ const RateCard = () => {
     <div className="rate-card-container" style={{width:"100%", height:"80%", border:"2px solid black", padding:"5px", margin:"10px", marginLeft:"200px"}}>
     <div className="rate-card-1">
       <Card style={{height:"100px", width:"100px", backgroundImage:"url('https://thumbs.dreamstime.com/b/luxury-golden-background-gradient-light-35374074.jpg')", border:"2px solid black", padding:"10px", margin:"20px", marginLeft:"100px", textAlign:"center"}}>
-      {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+      
       <Card.Body >
         <Card.Title style={{color:"red"}}>GRAM</Card.Title>
         <Card.Text>Per Gram</Card.Text>
@@ -57,7 +57,7 @@ const RateCard = () => {
     </div>
      <div className="rate-card-2">
      <Card style={{height:"100px", width:"80px", backgroundImage:"url('https://thumbs.dreamstime.com/b/luxury-golden-background-gradient-light-35374074.jpg')", border:"2px solid black", padding:"10px", margin:"20px", textAlign:"center"}}>
-     {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+     
      <Card.Body>
        <Card.Title style={{color:"red"}}>OUNCE</Card.Title>
        <Card.Text>Per Ounce</Card.Text>
@@ -68,7 +68,7 @@ const RateCard = () => {
    </div>
     <div className="rate-card-3">
     <Card style={{height:"100px", width:"120px",backgroundImage:"url('https://thumbs.dreamstime.com/b/luxury-golden-background-gradient-light-35374074.jpg')", border:"2px solid black", padding:"10px", margin:"20px", textAlign:"center"}}>
-    {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+    
     <Card.Body>
       <Card.Title style={{color:"red"}}>KG</Card.Title>
       <Card.Text>Per kG</Card.Text>
@@ -79,7 +79,7 @@ const RateCard = () => {
   </div>
    <div className="rate-card-4">
    <Card style={{height:"100px", width:"80px",backgroundImage:"url('https://thumbs.dreamstime.com/b/luxury-golden-background-gradient-light-35374074.jpg')", border:"2px solid black", padding:"10px", margin:"20px", textAlign:"center"}}>
-   {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+   
    <Card.Body>
      <Card.Title style={{color:"red"}}>PENNY</Card.Title>
      <Card.Text>Per Penny</Card.Text>
@@ -90,7 +90,7 @@ const RateCard = () => {
  </div>
   <div className="rate-card-5">
   <Card style={{height:"100px", width:"80px", backgroundImage:"url('https://thumbs.dreamstime.com/b/luxury-golden-background-gradient-light-35374074.jpg')", border:"2px solid black", padding:"10px", margin:"20px", textAlign:"center"}}>
-  {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+
   <Card.Body>
     <Card.Title style={{color:"red"}}>GRAIN</Card.Title>
     <Card.Text>Per Grain</Card.Text>
@@ -101,7 +101,7 @@ const RateCard = () => {
 </div>
  <div className="rate-card-6">
  <Card style={{height:"100px", width:"130px", backgroundImage:"url('https://thumbs.dreamstime.com/b/luxury-golden-background-gradient-light-35374074.jpg')", border:"2px solid black", padding:"10px", margin:"20px", textAlign:"center"}}>
- {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+
  <Card.Body>
    <Card.Title style={{color:"red"}}>POUND</Card.Title>
    <Card.Text>Per Pounds</Card.Text>
@@ -112,7 +112,7 @@ const RateCard = () => {
 </div>
  <div className="rate-card-7">
  <Card style={{height:"100px", width:"80px", backgroundImage:"url('https://thumbs.dreamstime.com/b/luxury-golden-background-gradient-light-35374074.jpg')", border:"2px solid black", padding:"10px", margin:"20px", textAlign:"center"}}>
- {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+ 
  <Card.Body>
    <Card.Title style={{color:"red"}}>BAHT</Card.Title>
    <Card.Text>Per Baht</Card.Text>
@@ -123,7 +123,7 @@ const RateCard = () => {
 </div>
  <div className="rate-card-8" >
 <Card style={{height:"100px", width:"80px", backgroundImage:"url('https://thumbs.dreamstime.com/b/luxury-golden-background-gradient-light-35374074.jpg')", border:"2px solid black", padding:"10px", margin:"20px", textAlign:"center" }}>
-{/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+
 <Card.Body>
   <Card.Title style={{color:"red"}}>TOLA</Card.Title>
   <Card.Text>Per Tola</Card.Text>

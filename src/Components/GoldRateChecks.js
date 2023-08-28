@@ -8,7 +8,7 @@ import 'react-date-picker/dist/DatePicker.css';
 const CheckRates = () => {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
-//   const [selectedCurrency, setSelectedCurrency] = useState(''); 
+ 
   const [historyData, setHistoryData] = useState([]);
 
   const handleStartDateChange = date => {
@@ -18,14 +18,6 @@ const CheckRates = () => {
   const handleEndDateChange = date => {
     setEndDate(date);
   };
-
-//   const handleCurrencyChange = e => {
-//     const newCurrency = e.target.value;
-//     setSelectedCurrency(newCurrency);
-    
-//   };
-
-
 
   const handleSubmit = async e => {
     e.preventDefault();

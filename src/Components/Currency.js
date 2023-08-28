@@ -11,19 +11,14 @@ const CurrencySelector = () => {
         
         const countryCurrencies = data.symbols; 
         const myArray=Object.keys(countryCurrencies);
-        // const mycurrency=Object.values(countryCurrencies);
-        // console.log(countryCurrencies);
-        // console.log(myArray);
+        
          setCurrencies(myArray);
-        //  setSelectedCurrency(mycurrency);
-        //  console.log(mycurrency);
+        
       })
       .catch(error => console.error('Error fetching currencies:', error));
   }, []);
 
-//   const handleCurrencyChange = (event) => {
-//     setSelectedCurrency(event.target.value);
-//   };
+
 const handleCurrencyChange = e => {
   const newCurrency = e.target.value;
   setSelectedCurrency(newCurrency);
@@ -41,7 +36,7 @@ const handleCurrencyChange = e => {
           </option>
         ))}
       </select>
-      {/* {selectedCurrency && <p>Selected currency: {selectedCurrency}</p>} */}
+      
     </div>
   );
 };
