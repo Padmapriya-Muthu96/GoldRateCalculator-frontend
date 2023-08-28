@@ -1,13 +1,100 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  
+  background-image: linear-gradient(to right, #9575cd, #7986cb, #64b5f6);
+ }
+
+ .navbar{
+   position: fixed;
+   /* z-index: 1; */
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 90px;
+   padding: 10px 20px;
+   background-color:#1a237e;
+  
+   
+ }
+ .title-div{
+  display: flex;
+  align-items: center;
+ }
+ .title-img{
+  width: 130px;
+  height: 100px;
+ }
+ .navbar-title{
+  text-align: center;
+  padding-left: 500px;
+ font-size: xx-large;
+ color: #fff59d;
+ }
+ .main-div{
+  /* background-color: aqua; */
+  margin-top: 110px;
+  height: auto;
+   
+ }
+ .calculator-box{
+  border: 3px solid black;
+  background-image: linear-gradient(to right, #9575cd, #7986cb, #64b5f6);
+  padding: 30px;
+  align-items: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  height: 500px;
+  width: 50%;
+ }
+
+ .rate-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  background-color:#9575cd
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.rate-card-container > * {
+  /* flex: 1 1 calc(25% - 10px);  */
+  margin: 5px; /* Add some space between cards */
 }
+ .history-box{
+  width: 25%;
+  height:40%;
+  background-image: linear-gradient(to right, #9575cd, #7986cb, #64b5f6);
+  border: 2px solid black;
+  margin: 30px;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 30px;
+ }
+ .table {
+  width: 25%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.table th {
+  background-color: #875ece;
+}
+
+.table tr:nth-child(even) {
+  background-color: #978cf7;
+}
+
+.table tr:hover {
+  background-color: #5b7ff3;
+
+}
+p{
+  font-size: large;
+}
+ 

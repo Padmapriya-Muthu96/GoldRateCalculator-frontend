@@ -1,0 +1,127 @@
+{/* <div className="box-2" style={{margin:"20px"}}>
+            <label style={{fontSize:"x-large"}}><i style={{color:"yellow", marginRight:"8px"}} class="fa-solid fa-flag"></i>Select Currency: </label>
+            <select id="currency-types" style={{width:"200px", height:"40px", margin:"20px"}}>
+                <option>USD - Dollar $</option>
+                <option>EUR - Euro €</option>
+                <option>GBP - Pound £</option>
+                <option>AUD - AU $</option>
+                <option>CAD - CA $</option>
+                <option>SGD - SG $</option>
+                <option>CHF - Swiss Franc (Sfr)</option>
+                <option>SAR - Saudi Riyal (ريال)</option>
+                <option>SAR - Saudi Riyal (ريال)</option>
+                <option>AED - Dirham (ر درهم)</option>
+                <option>QAR - Qatari Rial (رر.ق)</option>
+                <option>KWD - Kuwaiti Dinar (دينار كويتي) </option>
+                <option>MYR - Malaysian Ringgit</option>
+                <option>AED - UAE Dirham</option>
+                <option>AFN - Afghani</option>
+                <option>ALL - Albanian Lek</option>
+                <option>AMD - Armenian Dram</option>
+                <option>ARS - Argentine Peso</option>
+                <option>AUD - Australian Dollar</option>
+                <option>BDT - Bangladeshi Taka</option>
+                <option>BGN - Bulgarian Lev</option>
+                <option>BHD - Bahraini Dinar</option>
+                <option>BRL - Brazilian Real</option>
+                <option>CAD - Canadian Dollar</option>
+                <option>CHF - Swiss Franc</option>
+                <option>CLP - Chilean Peso</option>
+                <option>CNY - Chinese Yuan</option>
+                <option>COP - Colombian Peso</option>
+                <option>CUP - Cuban Peso</option>
+                <option>CZK - Koruna</option>
+                <option>DEM - </option>
+                <option>DJF - Djiboutian Franc</option>
+                <option>DKK - Danish Krone</option>
+                <option>DOP - Dominican Peso</option>
+                <option>DZD - Algerian Dinar</option>
+                <option>EGP - Egyptian Pound</option>
+                <option>ETB - Ethiopian Birr</option>
+                <option>EUR - Euro</option>
+                <option>GBP - British Pound</option>
+                <option>GEL - Georgian Lari</option>
+                <option>GHS - Ghana Cedi</option>
+                <option>GNF - Guinean Franc</option>
+                <option>HKD - Hong Kong Dollar</option>
+                <option>HRK - Croatian Kuna</option>
+                <option>HUF - Hungarian Forint</option>
+                <option>IDR - Indonesian Rupiah</option>
+                <option>ILS - Shekel</option>
+                <option>INR - Indian Rupee</option>
+                <option>IQD - Iraqi Dinar</option>
+                <option>IRR - Iranian Rial</option>
+                <option>ISK - Icelandic Kronor</option>
+                <option>JMD - Jamaican Dollar</option>
+                <option>JOD - Jordanian Dinar</option>
+                <option>JPY - Japanese Yen</option>
+                <option>KES - Kenyan Shilling</option>
+                <option>KRW - South Korean Won</option>
+                <option>KWD - Kuwaiti Dinar</option>
+                <option>KZT - Tenge</option>
+                <option>LAK - Lao Kip</option>
+                <option>LBP - Lebanese Pound</option>
+                <option>LKR - Sri Lankan Rupee</option>
+                <option>LYD - Libyan Dinar</option>
+                <option>MAD - Moroccan Dirham</option>
+                <option>MXN - Mexican Peso</option>
+                <option>MYR - Malaysian Ringgit</option>
+                <option>NGN - Nigerian Naira</option>
+                <option>NOK - Norwegian Krone</option>
+                <option>NPR - Nepalese Rupee</option>
+                <option>NZD - New Zealand Dollar</option>
+                <option>OMR - Omani Rial</option>
+                <option>PGK - Papua New Guinean Kina</option>
+                <option>PHP - Philippine Peso</option>
+                <option>PKR - Pakistani Rupee</option>
+                <option>PLN - Polish Zloty</option>
+                <option>PYG - Guarani</option>
+                
+
+            </select>
+
+            </div> */}
+
+             <div className="rate-cards-container">
+            <RateCard unit="Gram" rate={`Gold Rate per Gram ${mygram}`} />
+            {/* <RateCard unit="Kg" rate={Gold Rate per Gram} />
+            <RateCard unit="Tola" rate={Gold Rate per Gram} />
+            <RateCard unit="Grain" rate={Gold Rate per Gram} />
+            <RateCard unit="Ounce" rate={Gold Rate per Gram} /> */}
+          </div>
+
+           const gramRate = res.data.gramRate;
+            console.log(gramRate) 
+            setMygram(gramRate);
+    // const kgRate = res.data.kgRate; 
+    // const tolaRate = res.data.tolaRate; 
+    // const grainRate = res.data.grainRate; 
+    // const ounceRate = res.data.ounceRate; 
+const {mygram, setMygram}= useState('');
+    // const {goldtype, setGoldtype}= useState('');
+    // const {karattype, setKarattype}= useState('');
+    // const {currencytype, setCurrencytype}= useState('');
+
+    <table class="table table-striped">
+  <thead>
+    <tr>
+      <th >Date</th>
+      <th>Gold Rate (Gram )</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    {historyData.map((item, index) => {
+            const parts = item.split(' Gold Rate per Gram is ');
+            const date = parts[0];
+            const rate = parts[1];
+            
+            return (
+              <tr key={index}>
+                <td>{date}</td>
+                <td>{rate}</td>
+              </tr>
+            );
+          })}
+  </tbody>
+</table>
