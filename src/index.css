@@ -1,100 +1,399 @@
-body {
-  
-  background-image: linear-gradient(to right, #9575cd, #7986cb, #64b5f6);
- }
 
- .navbar{
-   position: fixed;
- 
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 90px;
-   padding: 10px 20px;
-   background-color:#1a237e;
-  
-   
- }
- .title-div{
+body{
+background-image: url('https://media.istockphoto.com/id/959093778/vector/abstract-blue-dreamy-background.jpg?s=612x612&w=0&k=20&c=Wgl9pQ0kZYUH2lnpNllCfMx_pBi9WLCcOG83qYmG-0c=');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+/* style for header */
+.header {
+  background-color: #375355;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid #d4af37; 
+}
+
+.container {
   display: flex;
   align-items: center;
- }
- .title-img{
-  width: 130px;
-  height: 100px;
- }
- .navbar-title{
-  text-align: center;
-  padding-left: 500px;
- font-size: xx-large;
- color: #fff59d;
- }
- .main-div{
+  gap: 15px;
+}
 
-  margin-top: 110px;
+.header-logo {
+  width: 60px; 
   height: auto;
-   
- }
- .calculator-box{
-  border: 3px solid black;
-  background-image: linear-gradient(to right, #9575cd, #7986cb, #64b5f6);
-  padding: 30px;
-  align-items: center;
-  margin-left: 25%;
-  margin-right: 25%;
-  height: 500px;
-  width: 50%;
- }
+}
 
- .rate-card-container {
+.header-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #d4af37; 
+  text-transform: uppercase;
+}
+
+
+@media (max-width: 600px) {
+  .header-title {
+    font-size: 20px;
+  }
+
+  .header-logo {
+    width: 50px;
+  }
+}
+/* ---------------------------------------------------------------------------------------------------------------- */
+/* style for rate card */
+
+.rate-card-container {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 20px;
-  background-color:#9575cd
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.rate-card-container > * {
-  
-  margin: 5px; 
-}
- .history-box{
-  width: 25%;
-  height:40%;
-  background-image: linear-gradient(to right, #9575cd, #7986cb, #64b5f6);
+.rate-card {
+  background-image: url("https://e1.pxfuel.com/desktop-wallpaper/665/62/desktop-wallpaper-golden-color-backgrounds-light-golden-colour-thumbnail.jpg");
+  background-size: cover;
+  background-position: center;
   border: 2px solid black;
-  margin: 30px;
-  margin-left: 25%;
-  margin-right: 25%;
-  padding: 30px;
- }
- .table {
-  width: 25%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-
-.table th,
-.table td {
-  border: 1px solid #ccc;
-  padding: 8px;
+  padding: 25px;
   text-align: center;
+  height: 130px;
+  width: 130px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 50%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.table th {
-  background-color: #875ece;
+/* Styling for text */
+.rate-title {
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-.table tr:nth-child(even) {
-  background-color: #978cf7;
+.rate-value {
+  color: blue;
+  background-color: #00e676;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
 }
 
-.table tr:hover {
-  background-color: #5b7ff3;
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .rate-card-container {
+    flex-wrap: wrap; 
+    justify-content: center;
+  }
+}
 
+@media (max-width: 768px) {
+  .rate-card-container {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .rate-card {
+    height: 120px;
+    width: 120px;
+  }
 }
-p{
-  font-size: large;
+
+@media (max-width: 480px) {
+  .rate-card-container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .rate-card {
+    height: 100px;
+    width: 100px;
+  }
+
+  .rate-title {
+    font-size: 16px;
+  }
 }
- 
+/* ------------------------------------------------------------------------------- */
+
+/* style of Gold calculator form */
+
+.calculator-form {
+  width: 100%;
+  max-width: 700px; 
+  margin: auto;
+  background: #acecff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+
+  border: solid rgb(248, 230, 131);
+}
+
+.form-title {
+  font-size: 2rem;
+  color: #1a237e;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.input-group {
+  display: flex;
+  gap: 15px;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.button-container button {
+  padding: 14px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #4fc3f7;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.button-container button:hover {
+  background: #039be5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .calculator-form {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .form-title {
+    font-size: 1.8rem;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .button-container button {
+    width: 100%;
+  }
+}
+/* ---------------------------------------------------------------------- */
+/* Result box style */
+.result-box{
+ text-align: center;
+ font-size: x-large;
+ background-color: #d4af37;
+}
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  color: #1a237e;
+  margin-bottom: 10px;
+}
+
+.description {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+}
+
+.form-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.date-picker {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  width: 100%;
+  background: #1a237e;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #0d1b6b;
+}
+
+.table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.styled-table th {
+  background: #1a237e;
+  color: white;
+  text-align: left;
+}
+
+.check-rates-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.check-rates-title {
+  text-align: center;
+  font-size: 26px;
+  color: #1a237e;
+  margin-bottom: 15px;
+}
+
+.check-rates-description {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+}
+
+.gold-form-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.gold-input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.gold-input-group label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.gold-date-picker {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.gold-submit-btn {
+  width: 100%;
+  background: #1a237e;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gold-submit-btn:hover {
+  background: #0d1b6b;
+}
+
+.gold-table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.gold-styled-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.gold-styled-table th,
+.gold-styled-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.gold-styled-table th {
+  background: #1a237e;
+  color: white;
+  text-align: left;
+}
+/* ------------------------------------------------------- */
+/* style for gold history form */
+.gold-form-container,.gold-table-container{
+  background: #acecff;
+}
+.check-rates-container{
+  background-image: url('https://media.istockphoto.com/id/959093778/vector/abstract-blue-dreamy-background.jpg?s=612x612&w=0&k=20&c=Wgl9pQ0kZYUH2lnpNllCfMx_pBi9WLCcOG83qYmG-0c=');
+}

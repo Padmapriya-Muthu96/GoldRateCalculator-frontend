@@ -27,7 +27,7 @@ const handleCurrencyChange = e => {
 
   return (
     <div className="box-3" style={{margin:"20px"}}>
-      <label style={{fontSize:"x-large"}}><i style={{color:"yellow", marginRight:"8px"}} class="fa-regular fa-flag"></i>Select Currency:</label>
+      <label style={{fontSize:"x-large"}}>Select Currency:</label>
       <select id="currency-types" name='country' style={{width:"200px", height:"40px", margin:"20px"}} value={selectedCurrency} onChange={handleCurrencyChange}>
         
         {currencies.map((currency, index) => (

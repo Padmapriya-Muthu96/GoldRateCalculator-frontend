@@ -1,6 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbarg from "./Components/Navbars";
+
+import Header from "./Components/Header";
+import RateCard from "./Components/RateCard";
 import MainContent from "./Components/MainPage";
 
 
@@ -8,24 +9,12 @@ import MainContent from "./Components/MainPage";
 
 function App() {
   return (
-    <Router>
-    
- 
- <div id="wrapper">
-   
-    <Navbarg/>
-     
-     <div className="main-div">
-    <Routes >
-    <Route path="/"  element={<MainContent/>}/>
-    
+    <div>
+    <Header/>
+    <RateCard/>
+    <MainContent/>
+    </div>
 
-    
-</Routes>
-</div>
-</div>
-
-    </Router>
 )
 }
 
